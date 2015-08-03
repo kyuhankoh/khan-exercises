@@ -135,26 +135,10 @@ table.limit th:first-child { text-align: right; }
 body.debug .graphie { outline: 1px dashed #fdd; }
 .graphie svg { position: absolute; top: 0; left: 0; }
 
-#scratchpad {
-    display: none;
-    margin: 0 10px;
-    overflow: hidden;
-    padding-bottom: 40px;
-}
-#scratchpad div {
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-}
-
+#scratchpad { padding-left: 20px; overflow: hidden; display: none; }
+#scratchpad div { position: absolute; margin-top: -20px; z-index: 1; min-width: 514px; height: 98%; outline: 1px solid #ccc; }
 #scratchpad-not-available { display: none; }
-#extras .report-issue-link { float: right; }
+#extras .report-issue-link { float: right; font-size: 11px; }
 
 #tester-info.info-box { background: #f2e4bf; }
 #tester-info .box { border: 1px solid black; padding: 2px 4px; margin-left: 5px; }
@@ -168,6 +152,24 @@ body.debug .graphie { outline: 1px dashed #fdd; }
 }
 #answer_area #answercontent { position: relative; z-index: 2; } /* above-scratchpad */
 #answer_area .hint-box { position: relative; z-index: 1;}
+#answer_area #examples-show {
+  display: none;
+  float: right;
+  margin-top: -2px;
+  background: #F7F7F7;
+  padding: 0 10px;
+  font-size: 80%;
+  border-radius: 50px;
+  border: 1px solid #DDD;
+  color: #777;
+  cursor: default;
+}
+#answer_area #examples-show:hover,
+#answer_area #examples-show.hover {
+  background: #777;
+  color: #fff;
+  text-decoration: none;
+}
 
 #problemarea a:link,
 #problemarea input,
@@ -316,6 +318,7 @@ body.debug .graphie { outline: 1px dashed #fdd; }
 #answer_area .answer-buttons {
   margin: 0 -10px;
   padding: 10px 10px 0;
+  border-top: 1px solid #fff;s
   position: relative;
 }
 

@@ -141,7 +141,7 @@ var primes = [197, 3, 193, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43,
     modulePromises = {},
     initialModulesPromise = $.Deferred(),
 
-    urlBase = localMode ?  "../" :
+    urlBase = localMode ?  "/ODSAkhan-exercises/" :
         Exercises.khanExercisesUrlBase != null ?
             Exercises.khanExercisesUrlBase :
             "/khan-exercises/",
@@ -421,7 +421,7 @@ var Khan = {
                 $("#scratchpad").hide();
                 // Un-outline things floating on top of the scratchpad
                 $(".above-scratchpad").css("border", "");
-                $("#scratchpad-show").text($._("Show scratchpad"));
+                //$("#scratchpad-show").text($._("Show scratchpad"));
             },
 
             toggle: function() {
